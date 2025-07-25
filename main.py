@@ -1,5 +1,4 @@
-# import time
-# import os
+
 import time
 
 from selenium import webdriver
@@ -10,7 +9,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 
 
 page=1
-# while page!=47
+
 
 cnt4=0;
 cnt5=0;
@@ -74,52 +73,3 @@ while page !=47:
 
 
 
-# for links in
-# driver.get("https://leetcode.com/problemset/all/")
-#
-# time.sleep(5)
-
-# html = driver.page_source
-# soup = BeautifulSoup(html, 'html.parser')
-# all_ques_div = soup.findAll("div", {"role": "row"})
-#
-# print(len(all_ques_div))
-
-# all_ques = []
-
-# for ques in all_ques_div:
-# 	all_ques.append(ques.findAll("div")[0].find("a"))
-
-# urls = []
-# titles = []
-#
-# for ques in all_ques:
-# 	urls.append("https://www.codechef.com"+ques['href'])
-# 	titles.append(ques.text)
-#
-# with open("problem_urls.txt", "w+") as f:
-# 	f.write('\n'.join(urls))
-#
-# with open("problem_titles.txt", "w+") as f:
-# 	f.write('\n'.join(titles))
-#
-#
-#
-#
-#
-# urls = ["https://www.codechef.com/problems/XYSTR",
-#         "https://www.codechef.com/problems/SUBINC"]
-# cnt = 0
-# for url in urls:
-#     driver.get(url)
-#     cnt += 1
-#     time.sleep(5)
-#     html = driver.page_source
-#     soup = BeautifulSoup(html, 'html.parser')
-#     problem_text = soup.find('div', {"class": "problem-statement"}).get_text()
-#     # print(problem_text)
-#     problem_text = problem_text.encode("utf-8")
-#     problem_text = str(problem_text)
-#
-#     with open("problem" + str(cnt) + ".txt", "w+") as f:
-#         f.write(problem_text)
